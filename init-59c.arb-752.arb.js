@@ -36,9 +36,4 @@ $(document).ready(function(){
             }
         }
     });
-    
-    if(device.desktop()) {
-//        console.log('это - wrap');
-        $( ".wrap" ).remove();    
-    };
 });
