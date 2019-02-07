@@ -229,7 +229,14 @@
                 </div>
                 <form id="order_form" action="send.php" method="post" ignore="if(this.name.value==&#39;&#39;){alert(&#39;Введите Ваше имя!&#39;);return false}if(this.phone.value==&#39;&#39;){alert(&#39;Введите Ваш номер телефона!&#39;);return false}return true;" aeid="119">
                     <input name="name" required="" type="text" placeholder="Введите ваше имя" id="inputName">
-                    <input name="phone" required="" type="text" placeholder="Введите ваш телефон" aeid="121">
+                    <input id="phone" 
+                           type="tel" 
+                           name="phone" 
+                           value="+380 (__) ___-__-__" 
+                           placeholder="Введите ваш телефон"
+                           pattern="^\+380(\s+)?\(?(67|96|97|98|68|50|66|95|99|63|93|73|94|92|91)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" 
+                           title="Пример: +380 (97) 000-00-00" 
+                           required>
                     <button type="submit" class="button-m1" aeid="125">Заказать сейчас</button>
                 </form>
             </div>
@@ -260,7 +267,6 @@
             $('.lazy').lazy();
         });
     </script>
-
 
 </body>
 

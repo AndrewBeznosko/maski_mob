@@ -1253,11 +1253,36 @@ p.nopad {
     background: #000;
 }
 
+/* send form */
+.button-m1.disabled {
+    background: rgba(249, 155, 85, 0.5);
+    box-shadow: 0 5px 0 rgba(224, 140, 76, 0.5);
+    position: relative;
+    cursor: wait;
+}
+
+.button-m1.disabled::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 80px;
+    display: block;
+    background-image: url(loading.gif);
+    background-position: center;
+    background-size: cover;
+    opacity: .4;
+}
+
 @media only screen and (min-width: 992px) {
   body {
     display: none;
   }
 }
+
+
 .el-timer {
     width: 400px;
     margin: 0 auto;
