@@ -410,8 +410,8 @@ p {
 	position: relative;
 }
 .header_li {
-	width: 200px;
-	height: 50px;
+	width: 138px;
+	height: 67px;
 	line-height: 18px;
 	border-radius: 7px;
 	box-sizing: border-box;
@@ -424,14 +424,46 @@ p {
 }
 .header_li1 {
 	position: absolute;
-	top: 88px;
-	left: 260px;
+    top: 20px;
+	right: 20px;
 }
 .header_li2 {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 88px;
+	left: 260px;
     line-height: 35px;
+    display: none;
+}
+.header_li3 {
+    position: absolute;
+    top: 95px;
+    left: 322px;
+    height: 170px;
+    background-image: url(batery.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 90% auto;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: rgba(99, 206, 156, 1);
+}
+.header_li3 span {
+    display: flex;
+    align-items: center;
+}
+.header_li3 b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #59b98c;
+    color: #bce3d0;
+    border-radius: 50%;
+    font-size: 130%;
+    line-height: 1;
+    margin: 3px 13px 5px 6px;    
 }
 
 .header .price {
