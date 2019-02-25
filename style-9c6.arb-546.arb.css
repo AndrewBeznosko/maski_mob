@@ -1000,6 +1000,55 @@ p.nopad {
     opacity: .4;
 }
 
+/* messengers style */
+.wr_ttl {
+    display: block;
+    max-width: 290px;
+    margin: 10px auto 20px;
+    position: relative;
+}
+
+.wr_ttl::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    background-color: #8362a4;
+}
+
+.wr_ttl::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    height: 2px;
+    background-color: #8362a4;
+}
+
+.msngrs_wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.msngrs_wrap a {
+    width: 50px;
+}
+
+.msngrs_wrap a img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 @media only screen and (min-width: 992px) {
   body {
     display: none;
