@@ -1,0 +1,11 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="30" height="28.46" viewBox="0 0 30 28.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>chat-icon</title>
+  <path class="cls-1" d="M451.19,606V598l-3,0a2.64,2.64,0,0,1-2.62-2.64V580.14a2.64,2.64,0,0,1,2.64-2.64H473a2.64,2.64,0,0,1,2.64,2.64v15.21A2.64,2.64,0,0,1,473,598H459.91Z" transform="translate(-445.61 -577.5)"/>
+</svg>

@@ -3777,11 +3777,27 @@ $(document).ready(function () {
                 window.location.href = "thanks.html";
             }).fail(function () {
                 console.log('fail');
-                $form.find('button').attr('disabled', false).removeClass('disabled'); 
+                $form.find('button').attr('disabled', false).removeClass('disabled');
             });
             //отмена действия по умолчанию для кнопки submit
             e.preventDefault();
         });
+    });
+
+    /* global modal */
+    var globalModal = $('.global-modal');
+    $(".btn-green-flat-trigger").on("click", function (e) {
+        e.preventDefault();
+        $(globalModal).toggleClass('global-modal-show');
+    });
+    $(".overlay").on("click", function () {
+        $(globalModal).toggleClass('global-modal-show');
+    });
+    $(".global-modal_close").on("click", function () {
+        $(globalModal).toggleClass('global-modal-show');
+    });
+    $(".mobile-close").on("click", function () {
+        $(globalModal).toggleClass('global-modal-show');
     });
 });
 

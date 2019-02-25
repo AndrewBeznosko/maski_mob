@@ -1355,6 +1355,244 @@ section.copyright {
     width: 50px;
 }
 
+/* chatny button */
+
+#chatny {
+    /* border: none; */
+    /* display: block; */
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    
+    border: none;
+    display: block;
+    position: fixed;
+    top: auto;
+    left: auto;
+    visibility: visible;
+    z-index: 99;
+    background: none transparent;
+    opacity: 1;
+    bottom: 10px;
+    right: 10px;
+}
+
+#chatny_button {
+    /* background-color: #4590FE; */
+    fill: rgb(255, 255, 255);
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -o-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -ms-border-radius: 40px;
+    border-radius: 40px;
+    border-width: 0;
+    box-shadow: 0.2em 0.2em 5px #7a7a7a;
+    box-shadow: 0.2em 0.2em 5px rgba(122, 122, 122, 0.5);
+    background-color: #63ce9c;
+    display: flex;
+    opacity: 1.08347;
+}
+
+#chatny_button:focus {
+    outline: none;
+}
+
+#chatny_button i {
+    fill: inherit;
+    stroke: inherit;
+    width: 25px;
+    height: 23px;
+    padding: 0;
+    line-height: 0;
+    background: url(chatbutton.svg);
+    -ms-background-size: cover;
+    background-size: cover;
+    /* margin: 4px auto auto; */
+    position: relative; 
+    top: 3px; 
+}
+
+/* global modal */
+.overlay {
+  background: rgba(255, 255, 255, 0.77);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.global-modal {
+  visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;  
+    z-index: -1;
+}
+
+.global-modal_contents {
+  background: #FFF;
+  -webkit-box-shadow: 0 0 8px 2px rgba(182, 182, 182, 0.75);
+  -moz-box-shadow: 0 0 8px 2px rgba(182,182,182, 0.75);
+  -o-box-shadow: 0 0 8px 2px rgba(182,182,182,0.75);
+  box-shadow: 0 0 8px 2px rgba(182, 182, 182, 0.75);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.global-modal-header{
+  border-bottom: 1px solid #ccc;
+}
+.global-modal-header h3{
+  color: #34495E;
+  text-align: center;  
+  font-weight: bold;
+  font-size: 22px;
+}
+.global-modal-header .mobile-close{
+  display: none;
+}
+.global-modal-header span{
+  font-weight: 200;
+}
+.global-modal-body{
+  width: 100%;
+}
+.global-modal-body p{
+  color: #34495E;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+.global-modal-body .content-left {
+  height: 225px;
+  width: 50%;
+  position: relative;
+  top: 55px;
+  float: left;
+  border-right: 1px solid #CCC;
+}
+
+.global-modal-body .content-right{
+  height: 225px;
+  width: 50%;
+  position: relative;
+  top: 55px;
+  float: left;
+}
+.content-right .sponsor-name{
+  font-weight: bold;
+  color: #000;
+}
+.global-modal_contents h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 32rem;
+  text-align: center;
+  display: block;
+}
+
+.global-modal_close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  text-decoration: none;
+  display: none;
+}
+
+.global-modal-show {
+    visibility: visible;
+    z-index: 9999;   
+}
+
+.global-modal-transition {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.global-modal-show .global-modal-transition {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media (max-width: 1139px){
+  .global-modal p{
+    text-align: center;
+  }
+  .global-modal:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+  .global-modal-body .content-left{
+    width: 80%;
+    display:block;
+    float: none;
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+  .global-modal-body .content-right{
+    width: 80%;
+    display: block;
+    margin: 40px auto;
+    float: none;
+    border-right: none;
+  }
+}
+
+@media (max-width : 767px) {
+  
+  .global-modal-header .mobile-close{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    curson: pointer;
+  }
+  .global-modal_close {
+    display: block;
+  }
+  
+  .global-modal-transition {
+    -webkit-transform: translateX(-0) translateY(150%);
+    -moz-transform: translateX(-0) translateY(150%);
+    -ms-transform: translateX(-0) translateY(150%);
+    transform: translateX(-0) translateY(150%);
+  }
+  
+} 
+
 .msngrs_wrap a img {
     width: 100%;
     height: auto;
