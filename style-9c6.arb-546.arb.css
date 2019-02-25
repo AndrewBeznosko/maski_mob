@@ -950,7 +950,7 @@ p.nopad {
     text-align: center;
     padding: 30px 20px !important;
     margin-bottom: 20px !important;
-    margin-top: 20px !important;
+    margin-top: 0px !important;
     line-height: 1;
 }
 
@@ -975,6 +975,10 @@ p.nopad {
     height: 1px;
     width: 80%;
     background: #000;
+}
+
+section.copyright {
+    padding-bottom: 10px;
 }
 
 /* send form */
