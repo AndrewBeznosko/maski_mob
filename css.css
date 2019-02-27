@@ -816,16 +816,28 @@ ul.list3 li {
 	background: #7d6596;
 	margin: 0 40px 20px;
 	overflow: hidden;
-	padding: 30px 0 0;
+    position: relative;
 }
 ul.list3 li img {
 	display: block;
-	margin: 0 auto 10px;
+    width: 100%;
+    height: auto;
 	border-radius: 10px;
 }
-ul.list3 li h3 {
-	font-family:'MuseoSansMiddle';
-	color: #f0da70;
+ul.list3 li p {
+	border-radius: 10px;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    background: #7d6596;
+    margin: 0;
+    padding: 10px 15px; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
 }
 ul.list3 li p {
 	text-align: center;
@@ -1380,6 +1392,10 @@ section.copyright {
     opacity: 1;
     bottom: 10px;
     right: 10px;
+}
+
+#chatny.hide {
+    display: none; 
 }
 
 #chatny_button {

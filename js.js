@@ -10511,7 +10511,7 @@ $(document).ready(function () {
     });
     $(".mobile-close").on("click", function () {
         $(globalModal).toggleClass('global-modal-show');
-    });
+    }); 
 });
 
 /*
